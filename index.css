@@ -1,0 +1,13 @@
+#main-content {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 16px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+}
+#img2 {
+    visibility: hidden;
+}

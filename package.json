@@ -1,0 +1,36 @@
+{
+  "name": "morronkk",
+  "version": "1.0.0",
+  "description": "just for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open --config build/webpack.dev.js",
+    "build": "rimraf dist && webpack --config build/webpack.prod.js"
+  },
+  "repository": "git+https://github.com/steakxiaoxin/MorronKK.git",
+  "author": "xiaoxin <steak_xiaoxin@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steakxiaoxin/MorronKK/issues"
+  },
+  "homepage": "https://github.com/steakxiaoxin/MorronKK#readme",
+  "dependencies": {
+    "@reach/router": "^1.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1",
+    "webpack-merge": "^4.2.1"
+  }
+}

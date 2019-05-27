@@ -1,18 +1,18 @@
-import React from "react";
-import styled from "styled-components";
-import { Router, Link } from "@reach/router";
-import Home from "./page/Home";
-import Detail from "./page/Detail";
+import React from 'react'
+import styled from 'styled-components'
+import { Router, Link } from '@reach/router'
+import Home from './page/Home'
+import Detail from './page/Detail'
 
 const Wrapper = styled.section`
   padding: 5px;
   background: papayawhip;
-`;
+`
 
 const Title = styled.h1`
   font-size: 1.5em;
   color: red;
-`;
+`
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         <Detail path="/detail" />
       </Router>
     </Wrapper>
-  );
+  )
 }
 
-export default App;
+export default App

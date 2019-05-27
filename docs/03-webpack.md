@@ -19,6 +19,10 @@
 
    "build": "rimraf dist && webpack --config build/webpack.prod.js"
 
+   或者使用 clean-webpack-plugin 插件 (2.0 以上版本不用添加参数)
+
+   npm i -D clean-webpack-plugin
+
 6. npm i -D nodemon (监视 node.js 应用程序中的任何更改并自动重启服务)
 
    "start": "nodemon --watch build --exec \"webpack-dev-server --open --config build/webpack.dev.js\"",
@@ -63,24 +67,15 @@ module.exports = merge(common, {
 
 ```js
 // webpack.prod.js
-const path = require('path')
 const merge = require('webpack-merge')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
 const common = require('./webpack.common.js')
 
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
-  optimization: {
-    splitChunks: {
-      vendor: {
-        commons: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          chunks: 'all'
-        }
-      }
-    }
-  }
+  optimization: {},
+  plugins: [new CleanWebpackPlugin()]
 })
 ```
 

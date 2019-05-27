@@ -24,7 +24,11 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, '../src/index.html')
+      template: path.join(__dirname, '../src/index.html'),
+      hash: true,
+      minify: {
+        collapseWhitespace: true // 把生成的 index.html 文件的内容的没用空格去掉，减少空间
+      }
     })
   ]
 }

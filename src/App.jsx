@@ -17,9 +17,10 @@ const Title = styled.h1`
 function App() {
   return (
     <Wrapper>
-      <Title>title</Title>
+      <Title>test</Title>
       <nav>
         <Link to="/">Home</Link>
+        <br />
         <Link to="/detail">Detail</Link>
       </nav>
 

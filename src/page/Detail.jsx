@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Detail() {
-  return <div>detail</div>
+  return <div>hi xiaoxin</div>
 }
 
 export default Detail

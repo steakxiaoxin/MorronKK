@@ -17,7 +17,7 @@ const Title = styled.h1`
 function App() {
   return (
     <Wrapper>
-      <Title>test</Title>
+      <Title>test for deploy</Title>
       <nav>
         <Link to="/">Home</Link>
         <br />

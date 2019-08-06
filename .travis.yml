@@ -1,8 +1,18 @@
+language: node_js
+node_js:
+  - 'stable'
+cache:
+  directories:
+    - node_modules
+script:
+  - npm run build
+
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  keep-history: true
+  github-token: $GITHUB_TOKEN
+  local_dir: build
   target_branch: gh_pages # default target branch gh_pages
   on:
     branch: master

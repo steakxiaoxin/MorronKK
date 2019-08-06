@@ -13,5 +13,6 @@ deploy:
   provider: pages
   skip_cleanup: true
   github-token: $GITHUB_TOKEN
+  target_branch: gh_pages # default target branch gh_pages
   on:
-    branch: gh_pages
+    branch: master
